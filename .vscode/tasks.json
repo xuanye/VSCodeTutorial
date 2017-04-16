@@ -1,0 +1,29 @@
+{
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build_console",
+            "command":"dotnet"
+            "args": [
+                "build", //组成dotnet build
+                //设置需要编译的项目，如果存在多个启动项目可以设置成解决方案文件（.sln）,这里只有一个项目所以设置运行项目也可以
+                "${workspaceRoot}\\VSCodeTutorial.ConsoleApp\\VSCodeTutorial.ConsoleApp.csproj"
+            ],
+            "isBuildCommand": true, //设置是否编译项目
+            "problemMatcher": "$msCompile"
+        },
+
+        {
+            "taskName": "UnitTest",
+            "command":"dotnet",
+            "args": [
+                "test",//组成dotnet test 命令
+                "${workspaceRoot}\\VSCodeTutorial.UnitTest\\VSCodeTutorial.UnitTest.csproj"
+            ],
+            "isTestCommand": true,//设置为单元测试项目
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

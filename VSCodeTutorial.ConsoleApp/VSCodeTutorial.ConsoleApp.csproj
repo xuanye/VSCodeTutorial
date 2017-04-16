@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+ <!--添加项目引用-->
+  <ItemGroup>
+    <ProjectReference Include="..\VSCodeTutorial.Common\VSCodeTutorial.Common.csproj" />
+  </ItemGroup>
+</Project>
